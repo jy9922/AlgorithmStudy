@@ -7,7 +7,7 @@ for _ in range(m):
   a, b = map(int, input().split())
   visited[a][b] = True
 
-# 사다리를 놓을 수 있는 위치 후보군에 넣기
+# 사다리를 놓을 수 있는 위치 후보군 리스트에 넣기
 for i in range(1, h+1):
   for j in range(1, n):
     if not visited[i][j] and not visited[i][j-1] and not visited[i][j+1]:
